@@ -8,8 +8,20 @@ Getting the closing stock data using alphavantage API and comparing the percenta
 - <b>Requests and API</b>
 - <b>twilio.rest</b>
 
-<!-- <h2>Program walk-through:</h2> -->
+<h2>Program walk-through:</h2>
 
+- Sign up with [twilio](https://www.twilio.com/try-twilio) and acquire **account sid & auth token**. Buy a number with free credits.
+- Get Api keys from [Alphavantage](https://www.alphavantage.co/support/#api-key) and [News API](https://newsapi.org/register).
+- Fill in the constants section of the code.
+	- account_sid = ""
+	- auth_token = ""
+	- TWILIO_NUMBER = ""
+	- RECEIVER_NUMBER = ""
+	- STOCK_API_KEY = ""
+	- STOCK_NAME = ""
+	- COMPANY_NAME = ""
+	- NEWS_API_KEY = ""
+- Run the program.
 
 <p align="center">
 <br />
