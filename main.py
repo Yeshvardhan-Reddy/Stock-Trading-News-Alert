@@ -32,6 +32,9 @@ NEWS_PARAMETERS = {
 }
 
 
+# ---------------------------------- SEND MESSAGE ---------------------------------- #
+
+
 def send_msg():
     client = Client(account_sid, auth_token)
     message = client.messages.create(body=get_news(stock_percent),
@@ -39,6 +42,8 @@ def send_msg():
                                      to=RECEIVER_NUMBER
                                      )
     print(message.status)
+
+# ---------------------------------- GET NEWS ---------------------------------- #
 
 
 def get_news(percentage):
@@ -53,6 +58,8 @@ def get_news(percentage):
     three_articles = [f"{STOCK}: {stock_percentage}%\n Headline: {article['title']}\nBrief: {article['description']}\n\n"
                       for article in three_articles]
     return "".join(three_articles)
+
+# ---------------------------------- GET STOCK PRICE ---------------------------------- #
 
 
 def stock_price():
